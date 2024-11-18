@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="calculator">
@@ -13,18 +14,19 @@
             <button class="btn" onclick="appendNumber('7')">7</button>
             <button class="btn" onclick="appendNumber('8')">8</button>
             <button class="btn" onclick="appendNumber('9')">9</button>
-            <button class="btn operator plus" id="plus" onclick="plusOperator('+')">+</button>
+            <button class="btn operator plus" id="plus" onclick="Operator('+')">+</button>
             <button class="btn" onclick="appendNumber('4')">4</button>
             <button class="btn" onclick="appendNumber('5')">5</button>
             <button class="btn" onclick="appendNumber('6')">6</button>
-            <button class="btn operator" id="minus" onclick="minusOperator('-')">-</button>
+            <button class="btn operator" id="minus" onclick="Operator('-')">-</button>
             <button class="btn" onclick="appendNumber('1')">1</button>
             <button class="btn" onclick="appendNumber('2')">2</button>
             <button class="btn" onclick="appendNumber('3')">3</button>
-            <button class="btn operator" id="multiply" onclick="multiplyOperator('*')">*</button>
+            <button class="btn operator" id="multiply" onclick="Operator('*')">*</button>
             <button class="btn" onclick="appendNumber('0')">0</button>
             <button class="btn" onclick="clearDisplay()">C</button>
-            <button class="btn operator" id="divide" onclick="divideOperator('/')">/</button>
+            <button class="btn operator" id="divide" onclick="Operator('/')">/</button>
+            <button class="btn btn-danger" id="cross" onclick="Cross()"><i class="fa-solid fa-delete-left"></i></button>
             <button class="btn equal" onclick="calculate()">=</button>
         </div>
     </div>
